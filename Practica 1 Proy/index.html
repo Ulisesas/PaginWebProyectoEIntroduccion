@@ -55,22 +55,16 @@
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                         <img class="rounded-circle me-3" src="assets/ImaUli.png" alt="..." width="40px">
-                        <img class="rounded-circle me-3" src="assets/fotoyo.jpeg" alt="..." width="40px">
-                        <img class="rounded-circle me-3" src="assets/ImaMauro.png" alt="..." width="40px">
                             <div class="ms-2">
                                 <div class="fw-bold">
                                     Cristian Ulises Ríos García<br />
-                                    Jesus Mauricio Díaz Flores <br />
-                                    Mauro David Sánchez Arena 
                                 </div>
                                 <div class="text-muted">Ingenería mecatrónica</div>
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: ?</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 16, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >?</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >?</a>
 
                     </header>
                 </div>
@@ -80,7 +74,7 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="650px" src="img/4.jpeg" alt="..." /></figure>
+                    
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
@@ -89,89 +83,13 @@
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
                         <p class="fs-6 mb-4"> La soldadura es el proceso de unir materiales, generalmente metales o plásticos, mediante calor, presión o ambos. Es clave en industrias como la construcción y la manufactura, con técnicas como soldadura por arco, TIG o MIG. Requiere precisión, conocimiento de materiales y medidas de seguridad para garantizar uniones fuertes y duraderas.</p>
-                        <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/ne555 Esquematico.png" alt="..." /></figure>
+                        <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Soldadura 2.jpg" alt="..." /></figure>
                         
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <ol>
-                            <li>
-                                <strong>Preparar el Protoboard:</strong>
-                                <p>Colocamos el protoboard sobre una superficie plana, que será el lugar donde ensamblaremos todos los componentes.</p>
-                            </li>
-                            <li>
-                                <strong>Conectar el Temporizador 555:</strong>
-                                <p>Insertamos el temporizador 555 en el protoboard, asegurándonos de que los pines estén bien alineados. Conectamos el pin 1 (GND) a la línea negativa del protoboard (tierra) y el pin 8 (VCC) a la línea positiva del protoboard.</p>
-                            </li>
-                            <li>
-                                <strong>Agregar el Potenciómetro:</strong>
-                                <p>Insertamos el potenciómetro en el protoboard, conectando un extremo a la línea positiva y el otro extremo a GND. La terminal central se utilizará como entrada de voltaje variable.</p>
-                            </li>
-                            <li>
-                                <strong>Conectar el Condensador:</strong>
-                                <p>Conectamos un condensador polarizado entre el pin 6 y el pin 2 del temporizador 555, asegurándonos de que el terminal positivo esté conectado al pin 6.</p>
-                            </li>
-                            <li>
-                                <strong>Configurar el LED:</strong>
-                                <p>Colocamos el LED en el protoboard. Conectamos el ánodo (la pata más larga) al colector del transistor NPN y el cátodo (la pata más corta) a la línea negativa (GND). Colocamos una resistencia de 1k ohms en serie con el LED para limitar la corriente y protegerlo.</p>
-                            </li>
-                            <li>
-                                <strong>Conectar el Transistor NPN:</strong>
-                                <p>Insertamos el transistor NPN en el protoboard. Conectamos la base al pin 3 del temporizador 555 a través de una de las resistencias de 1k ohms. Conectamos el emisor del transistor a la línea negativa (GND).</p>
-                            </li>
-                            <li>
-                                <strong>Finalizar Conexiones:</strong>
-                                <p>Conectamos el pin 2 del temporizador 555 al pin 6. Este circuito establece el temporizador en modo astable, permitiendo que el LED parpadee. Conectamos la otra resistencia de 1k ohms entre el pin 3 y el pin 7 del temporizador para completar la configuración.</p>
-                            </li>
-                            <li>
-                                <strong>Prueba del Circuito:</strong>
-                                <p>Una vez que hayamos realizado todas las conexiones, alimentamos el circuito conectando el VCC a una fuente de energía adecuada. Giramos el potenciómetro y observamos cómo la intensidad del LED cambia. A medida que ajustamos el potenciómetro, el brillo del LED debe variar en función de la resistencia aplicada.</p>
-                            </li>
-                        </ol>
-                        
-                        
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación y Diseño</h1>
-                        
-                            <p class="fs-6 mb-4">Desarrollamos el circuito en Thinkercad.</p>
-                            <figure class="mb-4" align="center"><video width="80%"  controls>
-                                <source src="video/Circuit design practica1 - Tinkercad - Google Chrome 2024-10-25 21-37-09.mp4" type="video/mp4">
-                            </video></p></figure>
-                            <source src="video/Circuit design practica1 - Tinkercad - Google Chrome 2024-10-25 21-37-09.mp4" type="video/mp4">
-                            <source src="video/Circuit design practica1 - Tinkercad - Google Chrome 2024-10-25 21-37-09.mp4" type="video/mp4">
-                            <p class="fs-6 mb-4">Efectivamente funciona, ya que si usamos el potenciómetro al máximo, el LED brilla sin parar. Ahora procederemos a recrearlo con componentes verdaderos.</p>
-                    
-                            
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Conectamos potenciómetro y temporizador .</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/1.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Agregamos capacitor y transistor NPN.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/2.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Agregamos jumpers, resistencias y LED.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/3.jpeg" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Prueba del circuito.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/4.jpeg" alt="..." /></figure>
-
-
-
-
-                            <p class="fs-6 mb-4">Circuito funcional.</p>
-                            
-
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Con esta práctica realizamos la interpretación de esquemas en CircuitVerse, posteriormente armamos el circuito.</p>
-                        <p class="fs-6 mb-4">Video de prueba:</p>
-                        <figure class="mb-4" align="center"><video width="80%"  controls>
-                        <source src="video/video.mp4" type="video/mp4">
-                        </video></p></figure>
-
-                        <p id="conclusiones">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Analizamos el esquema en CircuitVerse para posteriormente diseñarlo en Tinkercad, con los conocimientos adquiridos sobre las propiedades y el funcionamiento del potenciometro y temporizador armamos un circuito que puede controlar la intensidad y ritmo de iluminacion del LED.</p>
-                        <p class="fs-6 mb-4">En conclusión el analisís correcto en el esquema es esencial para el diseño de circuitos.</p>
-                        
+                        <p class="fs-6 mb-4">En esta practica, bajamos a la explanada donde estan las maquinas del IDIT y nos enseñaron a soldar y que materiales se ocupan. Iniciamos haciendo lineas rectas en un trozo de metal para practicar. Si llegamos a aplicar mas fuerza, se quedara pegado y puede quemar la barra pero si no le aplicamos suficiente fuerza, la soldadura no estara lo suficientemente fuerte y se deshara la soldadura. Al final nosotros tuvimos que cortar un trozo de metal y soldar nuestra inicial en el.</p>
+                        <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Soldadura.jpg" alt="..." /></figure>
 
                        
 
