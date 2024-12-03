@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 7 y 8 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Carro a control remoto con garra bluetooth</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/ImaUli.png" alt="..." />
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/fotoyo.jpeg" alt="..." />
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/ImaMauro.png" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">
+                                    Cristian Ulises Ríos García<br />
+                                    Jesus Mauricio Díaz Flores <br />
+                                    Mauro David Sánchez Arena 
+                                </div>
+                                <div class="text-muted">Ingeniería Mecatronica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Noviembre 27, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/ArduinoIni" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, diseñamos y construimos un carro a control remoto y con una garra. Todo esto controlado por una aplicación creada por nosotros con conexión bluetooth</p>
+                        <p class="fs-6 mb-4"></p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Bluetooth es una tecnología inalámbrica de corto alcance que conecta dispositivos sin cables, como auriculares, altavoces y relojes inteligentes. Opera en la frecuencia de 2.4 GHz, consume poca energía y es ampliamente utilizada por su facilidad y compatibilidad.</p>
+                        <p class="fs-6 mb-4"></p>
+
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Los materiales utilizados para esta practica son: <br/> </p>
+                            <p class="fs-6 mb-4">Componentes Electrónicos y Eléctricos
+                                <ul>
+                                    <li>3 Servomotores grandes: para controlar los movimientos de la garra.<br/></li>
+                                    <li>2 Motores DC: para las ruedas traseras del coche (solo en el proyecto del carrito).<br/></li>
+                                    <li>1 Micro motor: para mover la dirección del coche mediante engranajes (solo en el proyecto del carrito).<br/></li>
+                                    <li>Puente H (L298N): para controlar los motores del carrito.<br/></li>
+                                    <li>Módulo Bluetooth: para la comunicación remota con el celular.<br/></li>
+                                    <li>Protoboard: para facilitar las conexiones eléctricas.<br/></li>
+                                    <li>Fuente de alimentación para protoboard: transforma la corriente de 9V a 5V.<br/></li>
+                                    <li>Jumpers: para realizar las conexiones entre los componentes.<br/></li>
+                                    <li>3 Pilas de 9V:
+                                        <ul style="margin-left: 20px;">
+                                            <li>Una para los servomotores.<br/></li>
+                                            <li>Una para el Arduino.<br/></li>
+                                            <li>Una para el puente H (solo en el carrito).<br/></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="fs-6 mb-4">Materiales de Construcción
+                                <ul>
+                                    <li>Impresiones 3D:
+                                        <ul style="margin-left: 20px;">
+                                            <li>Base del coche.<br/></li>
+                                            <li>Sistema direccional.<br/></li>
+                                            <li>Llantas.<br/></li>
+                                            <li>Estructura de la garra.<br/></li>
+                                            <li>Tornillos: para ensamblar las piezas impresas y los componentes.<br/></li>
+                                            <li>Ligas: colocadas en las llantas para mejorar el agarre, ya que eran impresas en 3D.<br/></li>
+                                            <li>Engranajes: impresos en 3D para transmitir movimiento entre los motores y las partes mecánicas.<br/></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+
+                            <p class="fs-6 mb-4">Herramientas y Otros:
+                                <ul style="margin-left: 20px;">
+                                    <li>Arduino Uno: como controlador principal de ambos proyectos.<br/></li>
+                                    <li>Aplicación móvil (App Inventor): utilizada para diseñar las apps de control.<br/></li>
+                                    <li>Cable USB: para cargar y programar el Arduino desde la computadora.<br/></li>
+                                </ul>
+                            </p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo Carro -</h2>
+                        <p class="fs-6 mb-4">A continuación, compartimos cómo construimos nuestro carrito a control remoto con garra, utilizando diseño 3D, componentes electrónicos y programación para hacerlo funcional.</p>
+
+                            <p class="fs-6 mb-4">Pasos que Seguimos para Construir el Carrito:</p>
+                            
+                            <p class="fs-6 mb-4">1. Diseño y Fabricación de las Piezas
+                                Primero, diseñamos todas las piezas en 3D. Creamos la base del coche, el sistema direccional y reutilizamos unas garras que ya teníamos. Después de diseñar, imprimimos todas las piezas necesarias utilizando una impresora 3D.</p>
+                             
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Captura de pantalla 2024-11-28 135034.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Captura de pantalla 2024-11-28 140737.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/imagen (2).png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">2. Montaje del Sistema de Movilidad
+                                Para que nuestro coche pudiera moverse, utilizamos dos motores DC para las ruedas traseras y un micro motor para la dirección:</p>
+                                <p>Motores traseros: Nos dimos cuenta de que nuestro puente H tenía espacio solo para dos motores, pero necesitábamos controlar tres. Así que puenteamos los motores DC traseros para que ambos se controlaran al mismo tiempo desde un solo canal del puente H.
+                                    Micro motor para la dirección: Conectamos el micro motor al otro canal del puente H. Este motor, mediante un sistema de engranajes que diseñamos, mueve la direccional del coche.
+                                    </p>
+
+                                
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/2.1.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/2.1.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <p class="fs-6 mb-4">3. Configuración de la Garra
+                                Nuestra garra tiene tres servomotores negros, que son algo pesados. Para conectarlos:
+                                
+                                Usamos una protoboard para distribuir las conexiones.
+                                Conectamos el positivo de la protoboard a una pila y el GND al Arduino. De esta forma, los servomotores se alimentan directamente de la pila pero son controlados desde el Arduino.
+                                </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/4.jpg" alt="..." /></figure> 
+
+                            <p class="fs-6 mb-4">4. Control del Sistema con Bluetooth
+                                Finalmente, conectamos todo el sistema para controlarlo con una app:
+                                
+                                Usamos un módulo Bluetooth que conectamos al Arduino para recibir comandos desde un celular.
+                                En App Inventor, diseñamos una aplicación con varios botones. Cada botón envía una letra distinta al Arduino.
+                                Programamos el Arduino para que, al recibir una letra, ejecutara una acción específica:
+                                Mover la garra a una posición determinada.
+                                Mover las ruedas traseras hacia adelante o atrás.
+                                Girar la dirección para manejar el coche.
+                                </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/3.jpg" alt="..." /></figure>
+                            
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">Creación de una Garra Robótica para Recolectar Pelotitas</h2>
+                            <p class="fs-6 mb-4">
+                                En este proyecto diseñamos y construimos una garra robótica que incorporamos a un coche para recoger pelotitas. A continuación, describimos el proceso detallado de cómo la construimos y la programamos.
+                                
+                                Diseño y Construcción de la Garra
+                                La garra cuenta con tres servomotores que controlan diferentes movimientos:
+                                
+                                Movimiento vertical: El primer servomotor mueve toda la garra hacia arriba y hacia abajo.
+                                Movimiento de la muñeca: El segundo servomotor permite que la muñeca de la garra se incline en diferentes direcciones.
+                                Apertura y cierre de la pinza: El tercer servomotor está conectado a un engranaje que acciona otro engranaje, permitiendo abrir y cerrar las pinzas de la garra.
+                                Conexiones y Alimentación
+                                Conectamos los tres servomotores a una protoboard para facilitar las conexiones eléctricas.
+                                Energización de los servos:
+                                Usamos una pila de 9V para alimentar los servomotores.
+                                Puenteamos el GND de la protoboard con el GND del Arduino, asegurándonos de que ambos sistemas compartan la misma referencia.
+                                Alimentación del Arduino:
+                                Conectamos otra pila de 9V al Arduino para energizarlo.
+                                Módulo Bluetooth:
+                                También conectamos un módulo Bluetooth al Arduino, lo que nos permitió controlarlo de manera remota desde un celular.
+                                Control de la Garra con App Inventor
+                                Desarrollamos una app en App Inventor para manejar los movimientos de la garra.
+                                
+                                La app tiene cinco botones para cada servomotor, correspondientes a los ángulos 0°, 45°, 90°, 135° y 190°.
+                                Cada botón envía una letra específica al Arduino a través del módulo Bluetooth.
+                                Programación del Arduino:
+                                Al recibir una letra, el Arduino identifica qué servomotor debe moverse y lo posiciona en el ángulo correspondiente.
+                                Resultado Final
+                                Con esta configuración, logramos una garra robótica completamente funcional, capaz de recoger pelotitas con precisión. La combinación de diseño mecánico, conexiones electrónicas y control remoto nos permitió integrar la garra en un coche y ampliar sus funcionalidades, haciendo el proyecto más dinámico y útil.
+                                </p>
+
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Se hizo un codigo en arduino para poder controlar todos los motores, tanto de la garra, como de las llantas y la direccional para controlar el movimiento de izquierda a derecha del caroo.</p>
+                            <p class="fs-6 mb-4">Tambien se hizo una aplicación en App Inventor para poder controlar el carro y la garra mediante una coneccion bluetooth.</p>
+                            
+                            
+                            <p class="fs-6 mb-4">Este es el codigo para mover los motores y servomotores:</p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Cod1.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Cod2.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Cod3.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Cod4.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Y esta es la aplicación para controlarlo: </p> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/App1.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/App2.jpg" alt="..." /></figure>
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                            <p class="fs-6 mb-4">Los resultados que obtuvimos fueron los mejores. Tanto la garra como el movimiento del carro saliero bien.</p>
+                            <p class="fs-6 mb-4">Carro solo funcionando: </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/Carrofin.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4">Garra funcionando: </p>
+                                <source src="video/Garrafin.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4">Carro Prueba: </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/Carrofunfin.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Instructables -</h2>
+                            <a href="https://www.instructables.com/Proyecto-Carro/" target="_blank">Proyecto Carro - Instructables</a>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
